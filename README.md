@@ -28,4 +28,4 @@ Q)6pvX68KXK-=}9
 ```
 
 # License
-[MIT License](/LISENSE.md)
+[MIT License](/LICENSE)
