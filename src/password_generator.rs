@@ -27,8 +27,8 @@ impl Args {
 type GenerateResult<T> = Result<T, Box<dyn std::error::Error>>;
 
 pub(crate) fn generate_password(args: &Args) -> GenerateResult<Vec<String>> {
-    if args.length <= 5 {
-        return Err("Length of the password must be greater than 2 to protect secure.".into())
+    if args.length < 5 {
+        return Err("Length of the password must be greater than 5 to protect secure.".into())
     }
     else if args.num_pw < 1 {
         return Err("Number of passwords must be greater than or equal to 1.".into())
